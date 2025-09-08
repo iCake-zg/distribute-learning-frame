@@ -9,11 +9,14 @@
   - day1: 
     - docs/day1_notes.md: 学习笔记
     - test/test_deepspeed_install.py : 测试python、pytorch、cuda版本以及数量
-  
 
 ### **Day2**: 第一个DeepSpeed程序  
 * 将PyTorch训练脚本改造为DeepSpeed版本
 * 创建基本配置文件，理解初始化流程
+  - day2:
+    - docs/day2_notes.md: 学习笔记
+    - config/deepspeed_config.json: deep_speed 配置文件
+    - src/deepspeed_training.py : 训练测试文件
 
 ### **Day3**: DeepSpeed配置系统
 * 学习配置文件参数：优化器、学习率、混合精度
