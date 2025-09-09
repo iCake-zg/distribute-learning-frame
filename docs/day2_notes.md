@@ -22,5 +22,6 @@ zero_optimization.stage: Zero优化级别
 ## 启动
 ```bash
 deepspeed --master_port=29501 deepspeed_training.py
+deepspeed --num_gpus 1 --master_port=29501 deepspeed_training.py
+deepspeed --num_gpus 6 --master_port=29501 deepspeed_training.py
 ```
-

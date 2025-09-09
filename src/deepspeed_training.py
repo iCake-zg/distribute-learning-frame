@@ -72,14 +72,14 @@ def train_deepspeed():
     model = SimpleModel()
 
     # data
-    dataloader = creat_dummy_data(batch_size=32,num_batches=20)
+    dataloader = creat_dummy_data(batch_size=64,num_batches=20)
 
     #deepspeed initialize
     model_engine,optimizer,_,_ = deepspeed.initialize(
         args = args,
         model = model,
         model_parameters = model.parameters(),
-        config='../config/deepspeed_config.json'
+        config='../configs/deepspeed_config.json'
     )
 
     # loss_function
